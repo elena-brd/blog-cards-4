@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    background-image: linear-gradient(#e0e0e0, #f4f4f4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #181818;
+}
+
+img {
+    width: 100%;
+}
+
+.line-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0.5rem;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.icon {
+    position: absolute;
+    top: 60px;
+    background: #f72585;
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 5rem auto;
+}
+
+/* cards */
+.card {
+    border-radius: 5px;
+    position: inherit;
+    top: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0px 4px 4px 2px rgba(168, 168, 168, 0.3);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 4px 2px #f7258481;
+}
+
+.card .main-photo {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card .title h1 {
+    font-weight: 400;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.card .info p {
+    font-weight: 400;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: #454545;
+}
+
+/* testimonials */
+.card .testimonials {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem 1rem;
+    align-items: center;
+}
+
+.card .testimonials>div {
+    display: flex;
+    align-items: center;
+}
+
+.card .testimonials p {
+    padding: 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.card .testimonials span {
+    display: flex;
+    color: #777;
+    font-size: 0.8rem;
+}
+
+.card .user-photo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card .date {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+@media(max-width: 780px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 400px;
+    }
+}
